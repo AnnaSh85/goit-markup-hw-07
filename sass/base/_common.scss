@@ -1,0 +1,15 @@
+body {
+    background-color: var(--first-background-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--first-title-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+    color: inherit;
+}
