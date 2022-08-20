@@ -2,7 +2,8 @@
 
 
 
-.header-link {
+.navigation__link,
+.contacts__link {
     color: var(--second-title-color);
 
     transition-property: color;
@@ -14,7 +15,8 @@
         }
 }
 
-.header-link,
+.navigation__link,
+.contacts__link,
 .footer-link {
     @include font(14, 1.14, 500, 0.02em);
     /*font-weight: 500;
@@ -23,15 +25,16 @@
     letter-spacing: 0.02em;*/
 }
 
-.header-link {
+.navigation__link,
+.contacts__link {
     @include flex($jc: null);
     
     /*display: flex;
     align-items: center;*/
 }
 
-.mail,
-.tel {
+.contacts__mail,
+.contacts__tel {
     color: var(--first-title-color);
     transition-property: color, fill;
     transition-duration: var(--time);
@@ -49,10 +52,7 @@
 }
 
 
-.address:hover,
-.address:focus {
-    color: var(--accent-color);
-}
+
 
 .navigation__list {
     display: flex;
@@ -93,16 +93,15 @@
 
 
 /*header*/
-.header-main {
+.header__container {
     @include flex($jc: null);
     /*display: flex;
     align-items: center;*/
-}
-
-.header-main {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+
 
 .contacts__nav {
     margin-left: auto;

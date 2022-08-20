@@ -1,7 +1,6 @@
 /*logo*/
 .logo {
     text-decoration: none;
-    color: var(--black-color);
     font-family: 'Raleway', sans-serif;
     @include font(26, 1.19, 700, null);
     /*font-weight: 700;
@@ -12,13 +11,18 @@
 }
 
 
-.logo__blue {
+.logo__name {
     color: var(--accent-color);
 }
 
-.logo__footer {
+.footer__logo--color {
     color: var(--third-title-color);
     margin-bottom: 20px;
     margin-right: 0px;
+
+}
+.header__logo--color {
+    color: var(--black-color);;
+    
 
 }

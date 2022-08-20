@@ -12,7 +12,12 @@
     line-height: 1.71;
     letter-spacing: 0.03em;*/
     color: var(--third-title-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
+
 
 .footer-link {
     color: var(--add-title-color);
@@ -49,9 +54,10 @@
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
+    @include flex();
+    /*display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     fill: var(--second-btn-color);
 
     transition-property: background-color;
@@ -148,4 +154,9 @@
 
 .footer-input:focus {
     border: 1px solid;
+}
+
+.address:hover,
+.address:focus {
+    color: var(--accent-color);
 }
