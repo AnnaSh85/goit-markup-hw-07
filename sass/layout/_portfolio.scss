@@ -33,7 +33,7 @@
     left: 0;
     height: 100%;
     color: var(--second-btn-color);
-    font-family: 'Roboto';
+    font-family: var(--font-family);
     font-style: normal;
     @include font(18, 1.56, null, 0.03em);
     /*font-weight: 400;

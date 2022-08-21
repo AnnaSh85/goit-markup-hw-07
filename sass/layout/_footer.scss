@@ -5,7 +5,7 @@
     padding-bottom: 60px;
 }
 
-.footer-address {
+.footer-contacts {
     font-style: normal;
     @include font(14, 1.71, null, 0.03em);
     /*font-size: 14px;
@@ -18,16 +18,15 @@
     }
 }
 
-
-.footer-link {
+.footer-contacts__link {
     color: var(--add-title-color);
 }
 
-.footer-nav-item:not(:last-child) {
+.footer-contacts-nav__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer-title {
+.footer-social-block__title {
     @include font(14, 1.14, 700, 0.03em);
     /*font-weight: 700;
     font-size: 14px;
@@ -38,46 +37,17 @@
     margin-bottom: 20px;
 }
 
-.footer-social {
-    @include flex($ai: null);
-    /*display: flex;
-    justify-content: center;*/
-    gap: 10px;
-}
-
 .footer-social-block {
     margin-left: 70px;
 }
 
-.footer-social-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    @include flex();
-    /*display: flex;
-    align-items: center;
-    justify-content: center;*/
-    fill: var(--second-btn-color);
-
-    transition-property: background-color;
-    transition-duration: var(--time);
-    transition-timing-function: var(--time-function);
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-        }
-}
-
-
-
-.footer-container {
+.footer__container {
     @include flex( $jc: null, $ai: baseline);
     /*display: flex;
     align-items: baseline;*/
 }
 
-.footer-container-nav {
+.footer-navigation {
     flex-grow: 1;
 }
 
@@ -85,11 +55,11 @@
     margin-left: 94px;
 }
 
-.subscrible-box {
+.subscrible__box {
     display: flex;
 }
 
-.subscrible-title {
+.subscrible__title {
     @include font(14, 1.14, 700, 0.03em);
     /*font-weight: 700;
     font-size: 14px;
@@ -97,11 +67,10 @@
     letter-spacing: 0.03em;*/
     text-transform: uppercase;
     color: var(--second-btn-color);
-
     margin-bottom: 20px;
 }
 
-.footer-input {
+.subscrible__input {
     position: relative;
     background-color: transparent;
     min-width: 350px;
@@ -116,6 +85,9 @@
     color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    &:focus {
+            border: 1px solid;
+        }
 }
 
 .btn-footer-send {
@@ -147,16 +119,9 @@
 }
 
 
-
-.footer-modal-icon {
+.subscrible__icon {
     vertical-align: middle;
 }
 
-.footer-input:focus {
-    border: 1px solid;
-}
 
-.address:hover,
-.address:focus {
-    color: var(--accent-color);
-}
+

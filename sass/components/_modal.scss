@@ -80,14 +80,20 @@
     outline: transparent;
     transition: border-color var(--time) var(--time-function);
     &:focus {
-    border-color: var(--accent-color);
+            border-color: var(--accent-color);
         }
-    &:not(:focus):not(:placeholder-shown):valid {
-                background-color: rgba(27, 131, 19, 0.361);
-                }    
-    &:not(:focus):not(:placeholder-shown):invalid {
-                background-color: rgba(131, 62, 19, 0.361);
+    
+        &:not(:focus):not(:placeholder-shown):valid {
+            background-color: rgba(27, 131, 19, 0.361);
+        }
+    
+        &:not(:focus) {
+            &:not(:placeholder-shown) {
+                &:invalid {
+                    background-color: rgba(131, 62, 19, 0.361);
                 }
+            }
+        }
     &::placeholder {
             @include font(12, 1.16, null, 0.01em);
             /*font-weight: 400;
@@ -182,21 +188,22 @@
             /*display: flex;
         align-items: center;
         justify-content: center;*/
-        }
-.modal-check:checked+& {
+        
+            .modal-check:checked+& {
             background-color: var(--accent-color);
             border: none;
         }
     
-.modal-check:focus+& {
+            .modal-check:focus+& {
             border-color: var(--accent-color);
         }
+   }
 }
 
 .check-icon {
     /* fill: transparent; */
     opacity: 0;
-.modal-check:checked+.check-text & {
+    .modal-check:checked+.check-text & {
             fill: var(--second-btn-color);
             opacity: 1;
         }
