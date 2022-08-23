@@ -2,8 +2,7 @@
 
 
 
-.navigation__link,
-.contacts__link {
+.navigation__link {
     color: var(--second-title-color);
 
     transition-property: color;
@@ -33,8 +32,8 @@
     align-items: center;*/
 }
 
-.contacts__mail,
-.contacts__tel {
+.contacts__link
+ {
     color: var(--first-title-color);
     transition-property: color, fill;
     transition-duration: var(--time);
@@ -73,7 +72,7 @@
     margin-left: 50px;
 }
 
-.current {
+.navigation__link--current {
     position: relative;
     color: var(--accent-color);
     &::after {

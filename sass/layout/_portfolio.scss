@@ -44,12 +44,10 @@
     padding: 63px 24px;
     transform: translateY(100%);
     transition: transform var(--time) var(--time-function);
-    .projects-link:hover &{
+    .projects-link:hover &, .projects-link:focus & {
         transform: translateY(0%);
         }
-    .projects-link:focus & {
-        transform: translateY(0%);
-        }
+    
 }
 
 .projects-content {

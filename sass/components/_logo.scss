@@ -3,6 +3,7 @@
     text-decoration: none;
     font-family: var(--font-family-accent);
     @include font(26, 1.19, 700, null);
+    color: var(--black-color);
     /*font-weight: 700;
     font-size: 26px;
     line-height: 1.19;*/
@@ -21,8 +22,8 @@
     margin-right: 0px;
 
 }
-.header__logo--color {
-    color: var(--black-color);;
+/*.header__logo--color {
+    color: var(--black-color);
     
 
-}
+}*/
